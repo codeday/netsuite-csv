@@ -46,6 +46,11 @@ module.exports = class {
     return this;
   }
 
+  filter(fn) {
+    this[ROWS] = this[ROWS].filter(fn);
+    return this;
+  }
+
   get hasRows() {
     return this[ROWS] && this[ROWS].length > 0;
   }

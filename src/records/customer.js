@@ -10,4 +10,14 @@ module.exports = class extends Csv {
       { key: 'subsidiary', header: 'Primary Subsidiary', required: true },
     ];
   }
+
+  toCsv() {
+    const seenNames = [];
+    this.filter((row) => {
+      if (seenNames.includes(row.name)) return false;
+      seenNames.push(row.name);
+      return true;
+    });
+    return super.toCsv();
+  }
 };

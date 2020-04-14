@@ -5,6 +5,10 @@ testCsv.addRow(
   {
     name: 'foo',
     subsidiary: 'Parent Company : Subsidiary',
+  },
+  {
+    name: 'foo',
+    subsidiary: 'Parent Company : Subsidiary',
   }
 );
 const expectedOut = `Company Name,Customer ID,External ID,Primary Subsidiary
