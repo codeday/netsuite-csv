@@ -19,7 +19,7 @@ module.exports = class {
     this[SORT_FN] = newSortFn;
   }
 
-  addHeader(key, header) {
+  addField(key, header) {
     this[FIELDS].push({ key, header });
   }
 
