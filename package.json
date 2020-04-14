@@ -1,6 +1,6 @@
 {
   "name": "@codeday/netsuite-csv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates CSVs for import into Netsuite",
   "main": "src/index.js",
   "repository": "https://github.com/codeday/netsuite-csv",

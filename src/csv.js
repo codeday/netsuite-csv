@@ -19,8 +19,9 @@ module.exports = class {
     this[SORT_FN] = newSortFn;
   }
 
-  addField(key, header) {
-    this[FIELDS].push({ key, header });
+  addField(keyOrObj, header, required = false) {
+    if (typeof keyOrObj === 'object') this[FIELDS].push(keyOrObj);
+    else this[FIELDS].push({ keyOrObj, header, required });
   }
 
   addRow(row) {
