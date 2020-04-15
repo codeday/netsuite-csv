@@ -13,7 +13,7 @@ testCsv.addRow(
     paymentAccount: '200 American Express',
   }
 );
-const expectedOut = `External ID,Date,Vendor,Expenses Amount,Account,Item Account,Subsidiary,Memo,Reference
+const expectedOut = `External ID,Date,Vendor,Expenses Amount,Account,Expenses Account,Subsidiary,Memo,Reference
 myid,01/01/1970,vendor,100.00,200 American Express,100 Test,Parent Company : Subsidiary,,
 `;
 

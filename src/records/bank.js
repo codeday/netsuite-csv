@@ -29,7 +29,7 @@ module.exports = class extends Csv {
       row.type = row.type.toUpperCase();
       if (!['DEBIT', 'CREDIT'].includes(row.type)) throw new Error('type must be DEBIT or CREDIT.');
     }
-    if (row.amount) row.amount = String(row.amount.toFixed(2));
+    if (row.amount) row.amount = Number.parseFloat(row.amount).toFixed(2);
 
     super.addRow(row);
   }

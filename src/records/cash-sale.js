@@ -22,7 +22,7 @@ module.exports = class extends Csv {
       row.moment = originalRow.date;
       row.date = originalRow.date.format('MM/DD/YYYY');
     }
-    if (row.amount) row.amount = String(row.amount.toFixed(2));
+    if (row.amount) row.amount = Number.parseFloat(row.amount).toFixed(2);
 
     super.addRow(row);
   }
