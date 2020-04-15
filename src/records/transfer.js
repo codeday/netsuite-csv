@@ -6,7 +6,7 @@ module.exports = class extends Csv {
     this.fields = [
       { key: 'id', header: 'External ID', required: true },
       { key: 'date', header: 'Date', required: true },
-      { key: 'amount', header: 'Item Amount', required: true },
+      { key: 'amount', header: 'Amount', required: true },
       { key: 'fromAccount', header: 'From Account' },
       { key: 'toAccount', header: 'To Account' },
       { key: 'memo', header: 'Memo' },
